@@ -161,84 +161,45 @@ This section of the SRS should describe the general factors that affect the prod
 % Begin Section
 This section of the SRS should contain all of the software requirements to a level of detail sufficient to enable designers to design a system to satisfy those requirements, and testers to test that the system satisfies those requirements. Throughout this section, every stated requirement should be externally perceivable by users, operators, or other external systems. These requirements should include at a minimum a description of every input (stimulus) into the system, every output (response) from the system, and all functions performed by the system in response to an input or in support of an output.
 
-You normally have two options for organizing your functional requirements:
-\begin{enumerate}
-	\item Organize first by \emph{business events}, then by \emph{viewpoints}
-	\item Organize first by \emph{viewpoints}, then by \emph{business events}
-\end{enumerate}
-Choose the one which makes the most sense.
-
-For example, if you wish to organization by business events:
 \begin{enumerate}[{BE}1.]
-	\item Business Event
+	\item User enters a query
 	\begin{enumerate}[{VP1}.1]
-		\item Viewpoint
+		\item User
 			\begin{enumerate}
-				\item Requirement
-				\item Requirement
-				\item \dots
+				\item The product allows the user to search for movies based on the search criteria entered by the user.
+				\item The product allows the user to enter a quote as search criteria for searching for movies.
+				\item The product allows the user to choose genre/type of movies for search criteria.
+				\item The product allows the user to enter the names of the cast for search criteria.
+				\item The product allows the user to choose whether it wants to search box office movies only for search criteria.
 			\end{enumerate}
-		\item Viewpoint
+		\item Developer
 			\begin{enumerate}
-				\item Requirement
-				\item Requirement
-				\item \dots
+				\item Developer has access to network and security.
+				\item Developer has access to a ‘debug’ mode where implicit computations are visible on the console.
 			\end{enumerate}
-		\item \dots
 	\end{enumerate}
-	\item Business Event
+	\item User sorts and selects a result
 	\begin{enumerate}[{VP2}.1]
-		\item Viewpoint
+		\item User
 			\begin{enumerate}
-				\item Requirement
-				\item Requirement
-				\item \dots
+				\item The product displays the search results with each of the three expert’s results.
+				\item The product displays the best answer to the search result as well.
+				\item The product allows user to sort the result of the search based on search criteria including but not limited to rating, release date.
+				\item The product allows the user to select which movie to proceed with which further directs the user into a Google maps view of the location and timings of the show.
 			\end{enumerate}
-		\item Viewpoint
+		\item Developer
+	\end{enumerate}
+	\item User selects location to navigate to
+	\begin{enumerate}[{VP3}.1]
+		\item User
 			\begin{enumerate}
-				\item Requirement
-				\item Requirement
-				\item \dots
+				\item The product shall display locations where the movie selected is playing.
+				\item The application shall open up the phone’s navigation application.
 			\end{enumerate}
-		\item \dots
+		\item Developer
 	\end{enumerate}
 \end{enumerate}
 
-\underline{OR}, if you wish to organization by viewpoints:
-\begin{enumerate}[{VP}1.]
-	\item Viewpoint 
-	\begin{enumerate}[{BE1}.1]
-		\item Business Event
-		\begin{enumerate}
-			\item Requirement
-			\item Requirement
-			\item \dots
-		\end{enumerate}
-		\item Business Event
-		\begin{enumerate}
-			\item Requirement
-			\item Requirement
-			\item \dots
-		\end{enumerate}
-		\item \dots
-	\end{enumerate}
-	\item Viewpoint
-	\begin{enumerate}[{BE2}.1]
-		\item Business Event
-		\begin{enumerate}
-			\item Requirement
-			\item Requirement
-			\item \dots
-		\end{enumerate}
-		\item Business Event
-		\begin{enumerate}
-			\item Requirement
-			\item Requirement
-			\item \dots
-		\end{enumerate}
-		\item \dots
-	\end{enumerate}
-\end{enumerate}
 
 % End Section
 
