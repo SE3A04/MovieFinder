@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.10.2)  3 MAR 2016 09:16
 entering extended mode
 **C:/Users/Keyur/MovieFinder/Documentation/1-SRS/SRS.tex
@@ -10,6 +11,8 @@ Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 =======
+=======
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.21)  25 FEB 2016 09:34
 entering extended mode
 **SRS.tex
@@ -44,15 +47,21 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \bibindent=\dimen102
 )
 <<<<<<< HEAD
+<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 =======
+=======
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+<<<<<<< HEAD
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
+=======
 >>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks14
@@ -62,24 +71,33 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
 <<<<<<< HEAD
+<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 =======
+=======
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+<<<<<<< HEAD
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
+=======
 >>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks15
 \ex@=\dimen103
 ))
 <<<<<<< HEAD
+<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
 Package: amsthm 2009/07/02 v2.20.1
 =======
+=======
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
 Package: amsthm 2004/08/06 v2.20
 >>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
@@ -94,7 +112,11 @@ Package: amsthm 2004/08/06 v2.20
 \dth@everypar=\toks21
 )
 <<<<<<< HEAD
+<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+=======
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 =======
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 >>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
@@ -103,17 +125,23 @@ Package: amsmath 2013/01/14 v2.14 AMS math features
 
 For additional information on amsmath, use the `?' option.
 <<<<<<< HEAD
+<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 =======
+=======
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+<<<<<<< HEAD
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
+=======
 >>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 Package: amsopn 1999/12/14 v2.01 operator names
 )
@@ -156,17 +184,23 @@ LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
 <<<<<<< HEAD
+<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
 Package: enumerate 2014/10/28 v3.00 enumerate extensions (DPC)
 \@enLab=\toks26
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 =======
+=======
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks26
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+<<<<<<< HEAD
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
+=======
 >>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 \fancy@headwidth=\skip49
 \f@ncyO@elh=\skip50
@@ -178,6 +212,7 @@ Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \f@ncyO@olf=\skip56
 \f@ncyO@orf=\skip57
 )
+<<<<<<< HEAD
 <<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -199,6 +234,11 @@ Package ifvtex Info: VTeX not detected.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
+=======
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks27
@@ -212,6 +252,9 @@ Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+<<<<<<< HEAD
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
+=======
 >>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
@@ -228,6 +271,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen119
 \Gm@dimlist=\toks28
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
@@ -241,6 +285,8 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 =======
+=======
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
@@ -253,11 +299,15 @@ Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+<<<<<<< HEAD
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
+=======
 >>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
@@ -267,6 +317,8 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 =======
+=======
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
@@ -274,6 +326,9 @@ File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+<<<<<<< HEAD
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
+=======
 >>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
@@ -283,9 +338,16 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@width=\dimen121
 )
 <<<<<<< HEAD
+<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 ) (SRS.aux)
+=======
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(C:\Users\Justin\Documents\GitHub\MovieFinder\Documentation\1-SRS\SRS.aux)
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 =======
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
@@ -340,7 +402,11 @@ LaTeX Font Info:    ... okay on input line 34.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+=======
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 =======
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 >>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
@@ -359,7 +425,11 @@ LaTeX Font Info:    ... okay on input line 34.
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 36.
 <<<<<<< HEAD
+<<<<<<< HEAD
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+=======
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 =======
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 >>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
@@ -368,7 +438,11 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 36.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+=======
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 =======
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 >>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
@@ -393,7 +467,10 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 <<<<<<< HEAD
+<<<<<<< HEAD
 \c@placeholder=\count109
+=======
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 =======
 >>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 [3] [4]
@@ -402,7 +479,11 @@ Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
  [5] [6]
 <<<<<<< HEAD
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 453--453
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 446--446
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 =======
 Underfull \hbox (badness 10000) in paragraph at lines 446--446
 >>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
@@ -410,6 +491,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 446--446
  []
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Overfull \hbox (5.50117pt too wide) in paragraph at lines 453--454
 []\OT1/cmr/bx/n/10 Signature| 
@@ -431,6 +513,8 @@ m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
 Output written on SRS.pdf (7 pages, 97218 bytes).
 =======
+=======
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 Overfull \hbox (5.50117pt too wide) in paragraph at lines 446--447
 []\OT1/cmr/bx/n/10 Signature| 
  []
@@ -451,6 +535,9 @@ C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
 Output written on SRS.pdf (7 pages, 97390 bytes).
+<<<<<<< HEAD
+>>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
+=======
 >>>>>>> 5900e2c76a5d2dd8e066c5b18adcd6a64f2bdea1
 PDF statistics:
  46 PDF objects out of 1000 (max. 8388607)
