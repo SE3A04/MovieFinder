@@ -44,13 +44,13 @@ This section of the SRS gives an overview of everything included in the SRS.
 \subsection{Purpose}
 \label{sub:purpose}
 % Begin SubSection
-The purpose of this document is to give a detailed description of the software. It will illustrate the features of the software, the purpose, what it will do, the requirements, any constraints, and interactions with other systems or with its environment. This document will mainly be utilized by the developers of the system, but will also be reviewed the TAs.
+The purpose of this document is to give a detailed description of the software. It will illustrate the features of the software, the purpose, what it will do, the requirements, any constraints, and interactions with other systems or with its environment. This document will mainly be utilized by the developers of the system, but will also be reviewed the teaching assistants.
 % End SubSection
 
 \subsection{Scope}
 \label{sub:scope}
 % Begin SubSection
-The "\sname" is mobile application that will help the user find a movie given some information the user knows about the movie. The application should also display information about any movies matching the user's criteria. If the user finds the movie they were looking for, they should be directed to nearby theaters that are playing the movie if it is a new movie. The user should also be given links to purchase the movie if they want. The goal of this software is to help people identify movies based on characteristics they know about the movie they are looking for. 
+The "\sname" is mobile application that will help the user find information relevant to a movie given some details the user knows about the movie. The application should also display information about any movies matching the user's criteria. If the user finds the movie they were looking for, they should be directed to nearby theaters that are playing the movie if it is a new movie. The user should also be given links to purchase the movie if they want. The goal of this software is to help people identify movies based on characteristics they know about the movie they are looking for. 
 
 This software will not guarantee that it will always find the correct result, or any result at all. The software will try its best to identify nearby theaters based on its interaction with the GPS in the phone. The software will also interact over an Internet connection to perform the search.
 
@@ -61,8 +61,9 @@ This application is intended to be used in Canada, so it will be use Canadian En
 \label{sub:definitions_acronyms_and_abbreviations}
 % Begin SubSection
 \begin{enumerate}[a)]
-	\item Developer: the people creating the software
-	\item User: the person using the software
+	\item Developer: The people creating the software.
+	\item SRS: This document is the SRS. It stands for Software Requirements Specification. It details the requirements for the system to be.
+	\item User: The person using the software.
 \end{enumerate}
 % End SubSection
 
@@ -75,12 +76,12 @@ None
 \subsection{Overview}
 \label{sub:overview}
 % Begin SubSection
-The next section, Overall Description, gives an broad view of factors that affect the system-to-be. It does not detail specific requirements, it gives background information which is relevant to the requirements. The section after, Functional Requirements, details each of the requirements for the system. The requirements are elaborated in enough detail to allow the design of the system and allow tests to be constructed. The next section, Non-Functional Requirements, contains qualities that the overall system should have. The last section, Division of Labour, states who did a certain piece of work.
+The next section, \ref{odesc} Overall Description, gives an broad view of factors that affect the system-to-be. It gives background information which is relevant to the requirements. The section after, \ref{freq} Functional Requirements, details each of the requirements for the system. The requirements are elaborated in enough detail to allow the design of the system and allow tests to be constructed. The next section, \ref{nfreq} Non-Functional Requirements, contains qualities that the overall system should have. The last section, \ref{dlabour} Division of Labour, states who did a certain piece of work.
 % End SubSection
 
 % End Section
 
-\section{Overall Description}
+\section{Overall Description} \label{odesc}
 \label{sec:overall_description}
 % Begin Section
 Movie Matcher is an application which provides a list of possible movies matching criteria that the user
@@ -151,7 +152,7 @@ Thus when the social aspect of Movie Matcher is considered its requirements must
 
 % End Section
 
-\section{Functional Requirements}
+\section{Functional Requirements} \label{freq}
 \label{sec:functional_requirements}
 % Begin Section
 This section of the SRS should contain all of the software requirements to a level of detail sufficient to enable designers to design a system to satisfy those requirements, and testers to test that the system satisfies those requirements. Throughout this section, every stated requirement should be externally perceivable by users, operators, or other external systems. These requirements should include at a minimum a description of every input (stimulus) into the system, every output (response) from the system, and all functions performed by the system in response to an input or in support of an output.
@@ -198,7 +199,7 @@ This section of the SRS should contain all of the software requirements to a lev
 
 % End Section
 
-\section{Non-Functional Requirements}
+\section{Non-Functional Requirements} \label{nfreq}
 \label{sec:non-functional_requirements}
 % Begin Section
 \subsection{Look and Feel Requirements}
@@ -443,8 +444,7 @@ N/A
 % End Section
 \newpage
 \appendix
-\section{Division of Labour}
-\label{sec:division_of_labour}
+\section{Division of Labour} \label{dlabour}
 % Begin Section
 \begin{tabular}{ |p{3cm}||p{2cm}|p{6cm}|p{1.5cm}|  }
  \hline
