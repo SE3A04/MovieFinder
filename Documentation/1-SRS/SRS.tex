@@ -155,45 +155,94 @@ Thus when the social aspect of Movie Matcher is considered its requirements must
 \section{Functional Requirements} \label{freq}
 \label{sec:functional_requirements}
 % Begin Section
-This section of the SRS should contain all of the software requirements to a level of detail sufficient to enable designers to design a system to satisfy those requirements, and testers to test that the system satisfies those requirements. Throughout this section, every stated requirement should be externally perceivable by users, operators, or other external systems. These requirements should include at a minimum a description of every input (stimulus) into the system, every output (response) from the system, and all functions performed by the system in response to an input or in support of an output.
 
 \begin{enumerate}[{BE}1.]
-	\item User enters a query
+	
+	\item User wants to find the name of a movie
 	\begin{enumerate}[{VP1}.1]
 		\item User
 			\begin{enumerate}
-				\item The product allows the user to search for movies based on the search criteria entered by the user.
-				\item The product allows the user to enter a quote as search criteria for searching for movies.
-				\item The product allows the user to choose genre/type of movies for search criteria.
-				\item The product allows the user to enter the names of the cast for search criteria.
-				\item The product allows the user to choose whether it wants to search box office movies only for search criteria.
+				\item The product shall allow the user to search for movies based on the search criteria entered by the user.
+				\item The product shall allow the user to enter a quote as search criteria for searching for movies.
+				\item The product shall allow the user to choose genre/type of movies for search criteria.
+				\item The product shall allow the user to enter the names of the cast for search criteria.
+				\item The product shall allow the user to choose whether it wants to search box office movies only for search criteria.
 			\end{enumerate}
 		\item Developer
 			\begin{enumerate}
 				\item Developer has access to network and security.
 				\item Developer has access to a ‘debug’ mode where implicit computations are visible on the console.
 			\end{enumerate}
+		\item Security Administrator
+			\begin{enumerate}
+				\item The product shall encrypt any communication between the client and the server.
+			\end{enumerate}
 	\end{enumerate}
-	\item User sorts and selects a result
+	
+	\item User wants to sort the results
 	\begin{enumerate}[{VP2}.1]
 		\item User
 			\begin{enumerate}
 				\item The product displays the search results with each of the three expert’s results.
 				\item The product displays the best answer to the search result as well.
 				\item The product allows user to sort the result of the search based on search criteria including but not limited to rating, release date.
+			\end{enumerate}
+		\item Developer
+		\newline N/A
+		\item Security Administrator
+		\newline N/A
+	\end{enumerate}
+	\item User wants information on a result
+	\begin{enumerate}[{VP3}.1]
+		\item User
+			\begin{enumerate}
 				\item The product allows the user to select which movie to proceed with which further directs the user into a Google maps view of the location and timings of the show.
 			\end{enumerate}
 		\item Developer
+		\newline N/A
+		\item Security Administrator
+		\newline N/A
 	\end{enumerate}
-	\item User selects location to navigate to
-	\begin{enumerate}[{VP3}.1]
+	
+	\item User wants to watch the movie
+	\begin{enumerate}[{VP4}.1]
 		\item User
 			\begin{enumerate}
 				\item The product shall display locations where the movie selected is playing.
 				\item The application shall open up the phone’s navigation application.
 			\end{enumerate}
 		\item Developer
+		\newline N/A
+		\item Security Administrator
+		\newline N/A
 	\end{enumerate}
+	
+	\item Developer wants to update or exchange agents
+	\begin{enumerate}[{VP5}.1]
+		\item User
+		\newline N/A
+
+		\item Developer
+			\begin{enumerate}
+				\item The product shall allow the developer to update the experts/agents.
+			\end{enumerate}
+		\item Security Administrator
+		\newline N/A
+	\end{enumerate}
+	
+	\item A new agent is discovered
+	\begin{enumerate}[{VP6}.1]
+		\item User
+		\newline N/A
+
+		\item Developer
+			\begin{enumerate}
+				\item The product shall allow the developer to add and remove experts/agents.
+			\end{enumerate}
+		\item Security Administrator
+		\newline N/A
+	\end{enumerate}
+	
 \end{enumerate}
 
 
