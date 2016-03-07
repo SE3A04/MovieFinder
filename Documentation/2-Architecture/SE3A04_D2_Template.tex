@@ -22,7 +22,7 @@
 
 % Title Details
 %------------------------------------------------------------------------------
-\title{Deliverable \#2 Template}
+\title{Deliverable \#2}
 \author{SE 3A04: Software Design II -- Large System Design}
 \date{}                               
 %------------------------------------------------------------------------------
@@ -37,32 +37,26 @@
 \label{sec:introduction}
 % Begin Section
 
-This section should provide an brief overview of the entire document.
+This section of the High-Level Architectural Design provides an overview of everything included in the High-Level Architectural Design. 
 
 \subsection{Purpose}
 \label{sub:purpose}
 % Begin SubSection
-\begin{enumerate}[a)]
-	\item Delineate the purpose of the document
-	\item Specify the intended audience for the document
-\end{enumerate}
+The purpose of this document is to provide a representation of the structure of the data and program components that will be required to build the ‘Movie Matcher’ software. This document will primarily be utilized by the developers of the software application and will be reviewed by the teaching assistants. 
 % End SubSection
 
 \subsection{System Description}
 \label{sub:system_description}
 % Begin SubSection
-\begin{enumerate}[a)]
-	\item Give a brief description of the system. This could be a paragraph or two to give some context to this document.
-\end{enumerate}
+‘Movie Matcher’ is a mobile software application that will provide a platform through which users can find the name of a movie after being given specific details the user knows about the movie. The application must also display information relevant to any movies matching the user’s criteria. If the user successfully finds the movie that they were searching for, they should be directed to all nearly theaters that are currently screening the movie. If the movie is no longer in theaters, the user should be provided with links to purchase the movie. 
+The primary goal of this software is to help users identify movies based on movie attributes the user inputs into the system. The software cannot guarantee to always find the correct result, or any result whatsoever if none of the inputted attributes match the movies in the database. The software will attempt to locate nearby movie theaters based on its interaction with the pre-implemented GPS in the user’s mobile device. The software will also require a stable internet connection to function and perform searches. 
 % End SubSection
 
 \subsection{Overview}
 \label{sub:overview}
 % Begin SubSection
-\begin{enumerate}[a)]
-	\item Describe what the rest of the document contains 
-	\item Explain how the document is organised
-\end{enumerate}
+This document is divided into 5 separate sections. The first section is this introduction. The second section consists of the Use Case Diagram, which is a representation of a user’s interaction with the system. The Use Case Diagram will be accompanied with a text description. The third section contains the Analysis Class Diagram which is a static structure diagram that serves the purpose of describing the structure of the software, by showing the system’s subclasses, methods, attributes and the relationships between objects. The fourth section provides an overview of the overall architectural design of the software application. It will show the division of the system into subsystems with high cohesion and low coupling, thereby following good software engineering principles. 
+The fifth and final section will display the Class Responsibility Collaboration (CRC) Cards. A CRC card will be provided for each identified class. By organizing the document into 5 distinct sections with clear diagrams for each section, the audience will find the document easy to read and understand
 % End SubSection
 
 % End Section
@@ -70,16 +64,19 @@ This section should provide an brief overview of the entire document.
 \section{Use Case Diagram}
 \label{sec:use_case_diagram}
 % Begin Section
-This section should provide a use case diagram for your application. 
 \begin{enumerate}[a)]
-	\item Each use case appearing in the diagram should be accompanied by a text description. 
+	\item The use case for the client side of the application.\newline
+	\includegraphics[scale=0.5]{UseCaseClient}
+	\newpage
+	\item The use case for the server side of the application.\newline
+	\includegraphics[scale=0.5]{UseCaseServer}
 \end{enumerate}
 % End Section
 
 \section{Analysis Class Diagram}
 \label{sec:analysis_class_diagram}
 % Begin Section
-This section should provide an analysis class diagram for your application.
+\includegraphics[scale=.8]{SE3A04-Deliverable2-AnalysisClassDiagram.png}
 % End Section
 
 
@@ -134,11 +131,47 @@ This section should contain all of your CRC cards.
 \end{enumerate}
 % End Section
 
+\newpage
 \appendix
-\section{Division of Labour}
-\label{sec:division_of_labour}
+\section{Division of Labour} \label{dlabour}
 % Begin Section
-Include a Division of Labour sheet which indicates the contributions of each team member. This sheet must be signed by all team members.
+\begin{tabular}{ |p{3cm}||p{2cm}|p{6cm}|p{1.5cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{Contributions} \\
+ \hline
+ \textbf{Name}& \textbf{Student Number}& \textbf{Contribution}& \textbf{Signature}\\
+ \hline
+ Joshua &     &&   \\ 
+ &&&   \\
+ &&&   \\
+ &&&   \\
+ \hline
+ Keyur  &    &  &\\
+ &&&   \\
+ &&&   \\
+ &&&   \\
+ \hline
+ Justin &&& \\
+ &&&   \\
+ &&&   \\
+ &&&   \\
+ \hline
+ Bilal & & & \\
+ &&&   \\
+ &&&   \\
+ &&&   \\
+ \hline
+ Shaad &  & &\\
+ &&&   \\
+ &&&   \\
+ &&&   \\
+ \hline
+ Abdullah & &  &\\
+ &&&   \\
+ &&&   \\
+ &&&   \\
+ \hline
+\end{tabular}
 % End Section
 
 \newpage
