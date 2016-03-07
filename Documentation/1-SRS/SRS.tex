@@ -251,8 +251,7 @@ Thus when the social aspect of Movie Matcher is considered its requirements must
 \newcounter{placeholder}
 % Begin SubSubSection
 \begin{enumerate}[{LF}1. ]
-	\item The application should be visually appealing.
-	\item The overall design should look familiar to other query based applications.
+	\item The application should be visually appealing to anyone using it.
 	\item The interface should be descriptive, telling the user what to do and how to do it.
 	\item The query search and the experts should be easily visible.
 	\item The results displayed should be easily readable.
@@ -262,9 +261,8 @@ Thus when the social aspect of Movie Matcher is considered its requirements must
 
 \subsubsection{Style Requirements}
 \label{ssub:style_requirements}
-N/A
-\begin{enumerate}
-	\item hello
+\begin{enumerate}[{LF}5. ]
+	\item The overall design should look familiar to other query based applications.
 % Begin SubSubSection
 \end{enumerate}
 
@@ -277,26 +275,33 @@ N/A
 \label{ssub:ease_of_use_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{UH}1. ]
-	\item The application should be easy to use just like an ideal query processing software (navigate, surf, search, get results, etc.)
+	\item The application should be easy to use (easy to navigate, surf, search, get results, etc.) just like an ideal query processing software like google, wikipedia, etc.
+	\item The overall functionality of the application should be basic, a child of 10 years or older should be able to use it.
+	\item The application should be designed in a way that query-processing is not difficult.
 % End SubSubSection
 
 \subsubsection{Personalization and Internationalization Requirements}
 \label{ssub:personalization_and_internationalization_requirements}
-
+\begin{enumerate}[{N/A} ]
+	\item
+\end{enumerate}
 % End SubSubSection
 
 \subsubsection{Learning Requirements}
 \label{ssub:learning_requirements}
+	\item People who are new to query processing software should be able to learn how to use it within 10-20 minutes of full time usage.
 % Begin SubSubSection
-	\item The overall functionality of the application should be basic, a child of 10 years or older should be able to use it.
-	\item The application should be designed in a way that query-processing is not difficult.
+	
 
 \subsubsection{Understandability and Politeness Requirements}
 \label{ssub:understandability_and_politeness_requirements}
-
+	\item The product shall use symbols and words that are naturally understandable by the user community.
 
 \subsubsection{Accessibility Requirements}
 \label{ssub:accessibility_requirements}
+\begin{enumerate}[{N/A} ]
+	\item
+\end{enumerate}
 \end{enumerate}
 
 % End SubSection
@@ -317,7 +322,6 @@ N/A
 \label{ssub:safety_critical_requirements}
 % Begin SubSubSection
 	\item The application should project proper lighting on the screen (prevent seizures and blindness).
-	\item The application must abide by all internet/software safety laws.
 % End SubSubSection
 
 \subsubsection{Precision or Accuracy Requirements}
@@ -333,20 +337,29 @@ N/A
 
 \subsubsection{Robustness or Fault-Tolerance Requirements}
 \label{ssub:robustness_or_fault_tolerance_requirements}
+\begin{enumerate}[{N/A} ]
+	\item
+\end{enumerate}
 
 \subsubsection{Capacity Requirements}
 \label{ssub:capacity_requirements}
-	\item The application shall allow at most one user pewr device to operate the software.
-	\item The application shall ideally search for one movie per search.
+	\item The application shall allow at most one user to operate the software.
+	\item The application shall permit the user to make a query for only one particular movie at a time.
 % End SubSubSection
 
 \subsubsection{Scalability or Extensibility Requirements}
 \label{ssub:scalability_or_extensibility_requirements}
+\begin{enumerate}[{N/A} ]
+	\item
+\end{enumerate}
 
 % End SubSubSection
 
 \subsubsection{Longevity Requirements}
 \label{ssub:longevity_requirements}
+\begin{enumerate}[{N/A} ]
+	\item
+\end{enumerate}
 \end{enumerate}
 % End SubSubSection
 
@@ -361,26 +374,27 @@ N/A
 % Begin SubSubSection
 \begin{enumerate}[{OE}1. ]
 	\item The product shall run on any android platform device along with computers, tablets, PC’s, and cellphones (other devices that support Android).
+	\item The product will be user friendly as it will allow them to use the application indoors and outdoors provided they have a 
+wifi connection.
 % End SubSubSection
-
-\subsubsection{Expected Operational Behaviour}
-\label{ssub:expected_operational_behaviour}
-% Begin SubSubSection
-	\item The system shall resemble a simple input/output mechanism. The user will enter a search and the software shall process the requested query and present the results.
-	\item The software shall interact with the user to perform transactions.
-	\item The software shall interact with the system that has it installed (memory usage, battery percentage, etc.).
-
 
 \subsubsection{Requirements for Interfacing with Adjacent Systems}
 \label{ssub:requirements_for_interfacing_with_adjacent_systems}
-
+\begin{enumerate}[{N/A} ]
+	\item
+\end{enumerate}
 
 \subsubsection{Productization Requirements}
 \label{ssub:productization_requirements}
-
+\begin{enumerate}[{N/A} ]
+	\item
+\end{enumerate}
 
 \subsubsection{Release Requirements}
 \label{ssub:release_requirements}
+\begin{enumerate}[{N/A} ]
+	\item
+\end{enumerate}
 \end{enumerate}
 
 
@@ -392,20 +406,20 @@ N/A
 \label{ssub:maintenance_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{MS}1. ]
-	\item The main software holding the components together should easily be updated when it is needed.
 	\item The software should easily be modifiable just in case the user decides to add more functionality to the application.
-
 
 \subsubsection{Supportability Requirements}
 \label{ssub:supportability_requirements}
 % Begin SubSubSection
 	\item The application should be able to be used in various platforms such as Windows, Macintosh, and Android.
-	\item The application should be able to be used in various devices such as a desktop computer, cellphone, laptop, etc.
+	\item The application will have a help section within the software to allow the user to search for a solution to their problems (connectivity, query processing, etc.).
 % End SubSubSection
 
 \subsubsection{Adaptability Requirements}
 \label{ssub:adaptability_requirements}
-
+\begin{enumerate}[{N/A} ]
+	\item
+\end{enumerate}
 \end{enumerate}
 
 % End SubSection
@@ -423,7 +437,8 @@ N/A
 \subsubsection{Integrity Requirements}
 \label{ssub:integrity_requirements}
 	\item The application shall use encryption to protect transactions being sent from the user to the client.
-
+	\item The application shall make sure queries are made with proper spell check (provide the user with a "did you mean" suggestion, etc.).
+	\item The application shall protect itself from viruses and other malware attacks (prompting the computer to virus scan, etc.).
 % End SubSubSection
 
 \subsubsection{Privacy Requirements}
@@ -434,11 +449,17 @@ N/A
 
 \subsubsection{Audit Requirements}
 \label{ssub:audit_requirements}
+\begin{enumerate}[{N/A} ]
+	\item
+\end{enumerate}
 % Begin SubSubSection
 
 
 \subsubsection{Immunity Requirements}
 \label{ssub:immunity_requirements}
+\begin{enumerate}[{N/A} ]
+	\item
+\end{enumerate}
 \end{enumerate}
 % End SubSubSection
 
@@ -457,7 +478,7 @@ N/A
 
 \subsubsection{Political Requirements}
 \label{ssub:political_requirements}
-	\item The application shall show a disclaimer explaining any similarities that may arise to political symbol or figure is coincidental.
+	\item The application shall use experts primarily based on North America (Canada or the United States). 
 \end{enumerate}
 % End SubSubSection
 
@@ -477,6 +498,9 @@ N/A
 
 \subsubsection{Standards Requirements}
 \label{ssub:standards_requirements}
+\begin{enumerate}[{N/A} ]
+	\item
+\end{enumerate}
 \end{enumerate}
 
 
