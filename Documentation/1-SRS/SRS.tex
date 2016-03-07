@@ -93,28 +93,19 @@ and developed.
 \subsection{Product Perspective}
 \label{sub:product_perspective}
 % Begin SubSection
-The Movie Matcher application is an aggregate searching tool that returns possible movies matching the query made by the client (user) modified by parameters such as cast and crew, notable quotes, as well as genre and plot description. Movie Matcher will achieve this by accessing data from external and disparate experts that will be referenced against the parameters provided by the client.
+Movie Matcher acts as its own separate system with interaction only with the purpose of gathering information required for its functionality. No external system is dependant on its functionality.
 % End SubSection
 
 \subsection{Product Functions}
 \label{sub:product_functions}
 % Begin SubSection
-Movie Matcher is intended to handle the following 3 business events:
-\begin{enumerate}
-	\item User enters a query
-	\item User sorts and selects a result
-\end{enumerate}
-The Movie Matcher system will uniquely respond to all of these business events as follows:
-\begin{enumerate}
-\item Query its experts based on the user input parameters and process the results to return to the user a list of possible matching movies
-\item The query is returned as per usual and are ordered depending on the sorting parameter
-\end{enumerate}
+The Movie Matcher application is an aggregate searching tool that returns possible movies matching the query made by the client (user) modified by parameters such as cast and crew, notable quotes, as well as genre and plot description. Movie Matcher will achieve this by accessing data from external and disparate experts that will be referenced against the parameters provided by the client. These experts are unique external systems which interface with our application system to provide details necessary to the functionality of our application.
 % End SubSection
 
 \subsection{User Characteristics}
 \label{sub:user_characteristics}
 % Begin SubSection
-The following assumptions pertain to at least 80\% of our expected users:
+The following assumptions pertain to the minimum acceptable percentage of our expected users which we have decided to be 80\%:
 \begin{enumerate}[a)]
 	\item The user is able to comprehend enough of the English language to operate Movie Matcher
 	\item The user is able to operate an Android OS mobile application
@@ -127,9 +118,8 @@ Assumptions of the users is based on aspects required of the user to operate Mov
 \label{sub:constraints}
 % Begin SubSection
 \begin{enumerate}[a)]
-	\item Application must use external connections and performance is reliant on the network that is being used
-	\item The quality and format of the data of the experts is dependant on the choices of the experts
-	\item The nature of the data provided by the experts may limit the possible search parameters
+	\item Movie Matcher must be developed as an Android application limiting available libraries and support to ones available to the Android platform
+	\item Movie Matcher must have encrypted communication, restricting the length and type of information sent in messages to data that can be encrypted
 \end{enumerate}
 % End SubSection
 
