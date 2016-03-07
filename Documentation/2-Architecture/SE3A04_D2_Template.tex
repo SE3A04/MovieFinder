@@ -66,10 +66,10 @@ The fifth and final section will display the Class Responsibility Collaboration 
 % Begin Section
 \begin{enumerate}[a)]
 	\item The use case for the client side of the application.\newline
-	\includegraphics[scale=0.5]{UseCaseClient}
+	\includegraphics[scale=0.5]{UseCaseClient.png}
 	\newpage
 	\item The use case for the server side of the application.\newline
-	\includegraphics[scale=0.5]{UseCaseServer}
+	\includegraphics[scale=0.5]{UseCaseServer.png}
 \end{enumerate}
 % End Section
 
@@ -119,15 +119,182 @@ This section should contain all of your CRC cards.
 		\centering
 		\begin{tabular}{|p{5cm}|p{5cm}|}
 		\hline 
-		 \multicolumn{2}{|l|}{\textbf{Class Name:}} \\
+		 \multicolumn{2}{|l|}{\textbf{Class Name: Client Query}} \\
 		\hline
-		\textbf{Responsibility:} & \textbf{Collaborators:} \\
+		\textbf{Responsibilities: } & \textbf{Collaborators:} \\
 		\hline
-		\vspace{1in} & \\
-		\hline
+		Decrypt the encrypted client query information and send it to server control.	
+		\vspace{1in} & Server Control.\\
+		
+		\hline				
 		\end{tabular}
 	\end{table}
 	
+\begin{table}[ht]
+		\centering
+		\begin{tabular}{|p{5cm}|p{5cm}|}
+		\hline 
+		 \multicolumn{2}{|l|}{\textbf{Class Name: Server Query}} \\
+		\hline
+		\textbf{Responsibilities: } & \textbf{Collaborators:} \\
+		\hline
+		Format the decrypted client query to be used to query the experts.	
+		\vspace{1in} & Server Control.\\
+		
+		\hline				
+		\end{tabular}
+	\end{table}
+
+\begin{table}[ht]
+		\centering
+		\begin{tabular}{|p{5cm}|p{5cm}|}
+		\hline 
+		 \multicolumn{2}{|l|}{\textbf{Class Name: Client Results}} \\
+		\hline
+		\textbf{Responsibilities: } & \textbf{Collaborators:} \\
+		\hline
+		Retrieve the expert results and stores it.	
+		\vspace{1in} & Server Control.\\
+		
+		\hline				
+		\end{tabular}
+	\end{table}
+
+\begin{table}[ht]
+		\centering
+		\begin{tabular}{|p{5cm}|p{5cm}|}
+		\hline 
+		 \multicolumn{2}{|l|}{\textbf{Class Name: Client Interface}} \\
+		\hline
+		\textbf{Responsibilities: } & \textbf{Collaborators:} \\
+		\hline
+		Retrieve the server query. Use the server query to search the experts for information regarding the search query. Send the information retrieved from the expert search to the server control	
+		\vspace{1in} & Server Control.\\
+		
+		\hline				
+		\end{tabular}
+	\end{table}
+
+\begin{table}[ht]
+		\centering
+		\begin{tabular}{|p{5cm}|p{5cm}|}
+		\hline 
+		 \multicolumn{2}{|l|}{\textbf{Class Name: Server Control}} \\
+		\hline
+		\textbf{Responsibilities: } & \textbf{Collaborators:} \\
+		\hline
+		Handle client query, server query and expert results being sent and retrieved from other classes.	
+		\vspace{1in} & Expert Interface, Expert Results, Server Query, Client Query.\\
+		
+		\hline				
+		\end{tabular}
+	\end{table}
+
+\begin{table}[ht]
+		\centering
+		\begin{tabular}{|p{5cm}|p{5cm}|}
+		\hline 
+		 \multicolumn{2}{|l|}{\textbf{Class Name: Server Security Control}} \\
+		\hline
+		\textbf{Responsibilities: } & \textbf{Collaborators:} \\
+		\hline
+		Handle client query and query result being sent and retrieved from other classes.	
+		\vspace{1in} & Server Control, Client Security Control.\\
+		
+		\hline				
+		\end{tabular}
+	\end{table}
+
+\begin{table}[ht]
+		\centering
+		\begin{tabular}{|p{5cm}|p{5cm}|}
+		\hline 
+		 \multicolumn{2}{|l|}{\textbf{Class Name: Client Security Control}} \\
+		\hline
+		\textbf{Responsibilities: } & \textbf{Collaborators:} \\
+		\hline
+		Handle client query and query result being sent and retrieved from other classes.	
+		\vspace{1in} & Server Security Control, Client Control.\\
+		
+		\hline				
+		\end{tabular}
+	\end{table}
+
+\begin{table}[ht]
+		\centering
+		\begin{tabular}{|p{5cm}|p{5cm}|}
+		\hline 
+		 \multicolumn{2}{|l|}{\textbf{Class Name: Query Form}} \\
+		\hline
+		\textbf{Responsibilities: } & \textbf{Collaborators:} \\
+		\hline
+		Handle click events of selecting a search criterion. Handle click events of the search button. Send the query form information to client control.	
+		\vspace{1in} & Client Control.\\
+		
+		\hline				
+		\end{tabular}
+	\end{table}
+
+
+\begin{table}[ht]
+		\centering
+		\begin{tabular}{|p{5cm}|p{5cm}|}
+		\hline 
+		 \multicolumn{2}{|l|}{\textbf{Class Name: Client Query}} \\
+		\hline
+		\textbf{Responsibilities: } & \textbf{Collaborators:} \\
+		\hline
+		Encrypt the client query information and sends it to client control.
+		\vspace{1in} & Client Control.\\
+		
+		\hline				
+		\end{tabular}
+	\end{table}
+
+\begin{table}[ht]
+		\centering
+		\begin{tabular}{|p{5cm}|p{5cm}|}
+		\hline 
+		 \multicolumn{2}{|l|}{\textbf{Class Name: Client Control}} \\
+		\hline
+		\textbf{Responsibilities: } & \textbf{Collaborators:} \\
+		\hline
+		Handle client query information and client query results being passed from one class to another.	
+		\vspace{1in} & Client Security Control.\\
+		
+		\hline				
+		\end{tabular}
+	\end{table}
+
+\begin{table}[ht]
+		\centering
+		\begin{tabular}{|p{5cm}|p{5cm}|}
+		\hline 
+		 \multicolumn{2}{|l|}{\textbf{Class Name: Result Interface}} \\
+		\hline
+		\textbf{Responsibilities: } & \textbf{Collaborators:} \\
+		\hline
+		Retrieve the client query results. Display the client query results to the user.
+		\vspace{1in} & Client Control.\\
+		
+		\hline				
+		\end{tabular}
+	\end{table}
+
+\begin{table}[ht]
+		\centering
+		\begin{tabular}{|p{5cm}|p{5cm}|}
+		\hline 
+		 \multicolumn{2}{|l|}{\textbf{Class Name: Query Result}} \\
+		\hline
+		\textbf{Responsibilities: } & \textbf{Collaborators:} \\
+		\hline
+		Decrypt the encrypted client query results and sends it to client control.
+		\vspace{1in} & Client Control.\\
+		
+		\hline				
+		\end{tabular}
+	\end{table}
 \end{enumerate}
 % End Section
 
@@ -173,27 +340,6 @@ This section should contain all of your CRC cards.
  \hline
 \end{tabular}
 % End Section
-
-\newpage
-\section*{IMPORTANT NOTES}
-\begin{itemize}
-%	\item You do \underline{NOT} need to provide a text explanation of each diagram; the diagram should speak for itself
-	\item Please document any non-standard notations that you may have used
-	\begin{itemize}
-		\item \emph{Rule of Thumb}: if you feel there is any doubt surrounding the meaning of your notations, document them
-	\end{itemize}
-	\item Some diagrams may be difficult to fit into one page
-	\begin{itemize}
-		\item It is OK if the text is small but please ensure that it is readable when printed
-		\item If you need to break a diagram onto multiple pages, please adopt a system of doing so and thoroughly explain how it can be reconnected from one page to the next; if you are unsure about this, please ask about it
-	\end{itemize}
-	\item Please submit the latest version of Deliverable 1 with Deliverable 2
-	\begin{itemize}
-		\item It does not have to be a freshly printed version; the latest marked version is OK
-	\end{itemize}
-	\item If you do \underline{NOT} have a Division of Labour sheet, your deliverable will \underline{NOT} be marked
-\end{itemize}
-
 
 \end{document}
 %------------------------------------------------------------------------------
