@@ -25,7 +25,7 @@
 % Title Details
 %------------------------------------------------------------------------------
 \title{Deliverable \#3 Template}
-\author{SE 3A04: Software Design II -- Large System Design}
+\author{Keyur, Joshua, Abdullah, Justin, Bilal, Shaad}
 \date{}                               
 %------------------------------------------------------------------------------
 
@@ -39,36 +39,18 @@
 \label{sec:introduction}
 % Begin Section
 
-This section should provide an brief overview of the entire document.
-
 \subsection{Purpose}
 \label{sub:purpose}
-% Begin SubSection
-\begin{enumerate}[a)]
-	\item Delineate the purpose of the document
-	\item Specify the intended audience for the document
-\end{enumerate}
-% End SubSection
+The purpose of this document is to provide the software development team an overall guide to the architecture of this project. This document is published to outline all the parts of the MovieFinder software and to be a reference point for the team developing the application. The intended audience of this document are the software development team of MovieFinder, as well as  the professor and teaching assistants reviewing this design document.
 
 \subsection{System Description}
 \label{sub:system_description}
-% Begin SubSection
-\begin{enumerate}[a)]
-	\item Give a brief description of the system. This could be a paragraph or two to give some context to this document.
-\end{enumerate}
-% End SubSection
+The application MovieFinder has three main `screens.' When the application is launched, the user is displayed the main menu, where they can enter the information they know about the movie. Once they submit that information, the server will then recieve the query and process the query. Once the application has processed the results from the agents, the results will be sent to the client, and be displayed on the results menu. Once on the results menu, users will have the option of sorting the results by certain qualities including but not limited to rating or release date. Users can then choose a single movie to receive more information about. The server will use a universal movie database to get the information. This information takes users to the third screen, which is the information menu.
 
 \subsection{Overview}
 \label{sub:overview}
-% Begin SubSection
-\begin{enumerate}[a)]
-	\item Describe what the rest of the document contains 
-	\item Explain how the document is organised
-\end{enumerate}
+This document contains state charts for the controller classes of the application. These state charts provide a full description of the behaviour of the controller classes. Next, the design document contains the sequence diagrams. These sequence diagrams illustrate the flow of information from class to class under different scenarios. Lastly, this document shows the detailed class diagrams required to develop the MovieFinder. The detailed class diagrams provide a blueprint for the classes and their methods, as well as how they are connected to each other.
 
-% End SubSection
-
-% End Section
 
 \section{State Charts for Controller Classes}
 \label{sec:state_charts_for_controller_classes}
@@ -81,13 +63,19 @@ This section should provide a state chart for each controller class for your app
 \begin{figure}[H]
 	\includegraphics[width=\textwidth]{SD1}
 	\centering
-	\caption{Sequence Diagram 1}
+	\caption{Sequence diagram for entering a query}
 \end{figure}
 
 \begin{figure}[H]
 	\includegraphics[width=\textwidth]{SD2}
 	\centering
-	\caption{Sequence Diagram 2}
+	\caption{Sequence diagram for sorting the results}
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{SD3}
+	\centering
+	\caption{Sequence diagram for viewing individual movie information}
 \end{figure}
 
 \section{Detailed Class Diagram}
@@ -140,7 +128,7 @@ Include a Division of Labour sheet which indicates the contributions of each tea
  &&&   \\
  &&&   \\
  \hline
- Keyur  &    &  &\\
+ Keyur  & 1311559   & Introduction \& Sequence Diagram  &\\
  &&&   \\
  &&&   \\
  &&&   \\
