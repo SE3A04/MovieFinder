@@ -13,6 +13,7 @@
 %\usepackage{extarrows}
 \usepackage{setspace}
 \usepackage{float}
+\usepackage{array}
 %------------------------------------------------------------------------------
 
 % Header and Footer
@@ -80,6 +81,238 @@ This section should provide a state chart for each controller class for your app
 
 \section{Detailed Class Diagram}
 \label{sec:detailed_class_diagram}
+
+\begin{table}[H]
+\centering % centers tables in page
+\begin{tabular}{|>{\centering\arraybackslash}p{10cm}|} % centers text in table while specifying table width
+% use immediately preceding column specifier
+\hline
+Client Control\\
+\hline
+\begin{itemize}
+\item[-] clientID
+\item[-] private
+\end{itemize}
+\\
+\hline
+\begin{itemize}
+\item[+] constructor
+\item[+] public
+\end{itemize}
+\\
+\hline
+\end{tabular}
+\end{table}
+%
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\centering\arraybackslash}p{10cm}|}
+\hline
+Result Interface\\
+\hline
+\begin{itemize}
+\item[-] private
+\end{itemize}
+\\
+\hline
+\begin{itemize}
+\item[+] public
+\end{itemize}
+\\
+\hline
+\end{tabular}
+\end{table}
+%
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\centering\arraybackslash}p{10cm}|}
+\hline
+Query Form\\
+\hline
+\begin{itemize}
+\item[-] private
+\end{itemize}
+\\
+\hline
+\begin{itemize}
+\item[+] public
+\end{itemize}
+\\
+\hline
+\end{tabular}
+\end{table}
+%
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\centering\arraybackslash}p{10cm}|}
+\hline
+Server Control\\
+\hline
+\begin{itemize}
+\item[-] expertList: Expert[3] = [expert1, expert2, expert3]
+\item[-] clientID: int[] = null
+\item[-] clientQuery: object[] = null
+\item[-] queryResponse: object[] = null
+
+\end{itemize}
+\\
+\hline
+\begin{itemize}
+\item[+] contructor()
+\item[+] init()
+\item[+] listen()
+\item[+] readQuery(Query query): object
+\item[+] sendResult(Object object)
+\item[+] lockExpert(String expert)
+\end{itemize}
+\\
+\hline
+\end{tabular}
+\end{table}
+%
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\centering\arraybackslash}p{10cm}|}
+\hline
+Expert 1 Control\\
+\hline
+%\begin{itemize}
+%\item[-] private
+%\end{itemize}
+%\\
+%\hline
+\begin{itemize}
+\item[+] constructor()
+\item[+] init()
+\item[+] update()
+\item[+] search(Object query): Object[]
+\item[+] addItem(Object newObject)
+\item[+] removeItem(Object oldObject): Object
+\end{itemize}
+\\
+\hline
+\end{tabular}
+\end{table}
+%
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\centering\arraybackslash}p{10cm}|}
+\hline
+Expert 1 Database\\
+\hline
+\begin{itemize}
+\item[-] movieList: String[] = null
+\item[-] paramterList: enumerate = 1..N
+\item[-] parameterData1: Object[] = null
+\item[-] paramterDataN: Object[] = null
+\end{itemize}
+\\
+\hline
+\begin{itemize}
+\item[+] constructor()
+\item[+] deconstructor()
+\item[+] init()
+\end{itemize}
+\\
+\hline
+\end{tabular}
+\end{table}
+%
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\centering\arraybackslash}p{10cm}|}
+\hline
+Expert 2 Control\\
+\hline
+%\begin{itemize}
+%\item[-] private
+%\end{itemize}
+%\\
+%\hline
+\begin{itemize}
+\item[+] constructor()
+\item[+] init()
+\item[+] update()
+\item[+] search(Object query): Object[]
+\item[+] addItem(Object newObject)
+\item[+] removeItem(Object oldObject): Object
+\end{itemize}
+\\
+\hline
+\end{tabular}
+\end{table}
+%
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\centering\arraybackslash}p{10cm}|}
+\hline
+Expert 2 Database\\
+\hline
+\begin{itemize}
+\item[-] movieList: String[] = null
+\item[-] paramterList: enumerate = 1..N
+\item[-] parameterData1: Object[] = null
+\item[-] paramterDataN: Object[] = null
+\end{itemize}
+\\
+\hline
+\begin{itemize}
+\item[+] constructor()
+\item[+] deconstructor()
+\item[+] init()
+\end{itemize}
+\\
+\hline
+\end{tabular}
+\end{table}
+%
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\centering\arraybackslash}p{10cm}|}
+\hline
+Expert 3 Control\\
+\hline
+%\begin{itemize}
+%\item[-] private
+%\end{itemize}
+%\\
+%\hline
+\begin{itemize}
+\item[+] constructor()
+\item[+] init()
+\item[+] update()
+\item[+] search(Object query): Object[]
+\item[+] addItem(Object newObject)
+\item[+] removeItem(Object oldObject): Object
+\end{itemize}
+\\
+\hline
+\end{tabular}
+\end{table}
+%
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\centering\arraybackslash}p{10cm}|}
+\hline
+Expert 3 Database\\
+\hline
+\begin{itemize}
+\item[-] movieList: String[] = null
+\item[-] paramterList: enumerate = 1..N
+\item[-] parameterData1: Object[] = null
+\item[-] paramterDataN: Object[] = null
+\end{itemize}
+\\
+\hline
+\begin{itemize}
+\item[+] constructor()
+\item[+] deconstructor()
+\item[+] init()
+\end{itemize}
+\\
+\hline
+\end{tabular}
+\end{table}
 % Begin Section
 This section should provide a detailed class diagram for your application.
 % End Section
