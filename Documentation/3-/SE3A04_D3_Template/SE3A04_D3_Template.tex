@@ -100,14 +100,18 @@ This document contains state charts for the controller classes of the applicatio
 Client Control\\
 \hline
 \begin{itemize}
-\item[-] clientID
-\item[-] private
+\item[-] clientID: int
+\item[-] clientquery(): Object
+\item[-] queryResponse(): Object
 \end{itemize}
 \\
 \hline
 \begin{itemize}
-\item[+] constructor
-\item[+] public
+\item[+] constructor()
+\item[+] init()
+\item[+] listener(): void
+\item[+] recordQuery(q: Query): void
+\item[+] sendQuery():  Object
 \end{itemize}
 \\
 \hline
@@ -121,12 +125,16 @@ Client Control\\
 Result Interface\\
 \hline
 \begin{itemize}
-\item[-] private
+\item[-] query: String
 \end{itemize}
 \\
 \hline
 \begin{itemize}
-\item[+] public
+\item[+] constructor()
+\item[+] setResult(q: String): void
+\item[+] getResult(l: String): String
+\item[+] displayResult(): void
+\item[+] removeResult(): void
 \end{itemize}
 \\
 \hline
@@ -140,12 +148,16 @@ Result Interface\\
 Query Form\\
 \hline
 \begin{itemize}
-\item[-] private
+\item[-] selection: Object
 \end{itemize}
 \\
 \hline
 \begin{itemize}
-\item[+] public
+\item[+] constructor()
+\item[+] getResult(result: Object): void
+\item[+] actionPerformed(event: Object): void
+\item[+] mouseClicked(event: Object): void
+\item[+] sendResult(result: Object): Object
 \end{itemize}
 \\
 \hline
@@ -352,17 +364,17 @@ Expert 3 Database\\
  &&&   \\
  &&&   \\
  \hline
- Bilal & & & \\
+ Bilal & 1320763 & State Charts for Controller Classes & \\
  &&&   \\
  &&&   \\
  &&&   \\
  \hline
- Shaad &  & &\\
+ Shaad & 1335602 & State Charts for Controller Classes &\\
  &&&   \\
  &&&   \\
  &&&   \\
  \hline
- Abdullah & &  &\\
+ Abdullah & 1317053 & Detailed Class Diagrams &\\
  &&&   \\
  &&&   \\
  &&&   \\
