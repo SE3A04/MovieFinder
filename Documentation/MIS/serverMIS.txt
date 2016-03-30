@@ -1,0 +1,17 @@
+ServerControl.java : Class
+
++ init() 								// called when the server is started up
++ listen() 								// similar to actionlistener, where server waits for a request or incoming 
++ readQuery(Query query): Object []		// Processes user query, and returns all experts' results into an array
++ sendResults(Object object) 			// Sends queryResponse to the client
++ lockExpert(String expert) 			// Locks out the processing/results of an expert
+
+_________________________________________________________________________________________________________________
+
+ExpertOneControl.java : Class
+
++ init() 								//
++ update() 								// Updates database reference to most recent update
++ search(Object partialQuery):Object[] 	// retrieves and returns all relevant results from expert 1 database
++ addItem(Object newObject) 			// manually add a movie object to the expert 1 results list
++ removeItem(Object oldObject): Object 	// manually remove a movie object from the expert 1 results list
