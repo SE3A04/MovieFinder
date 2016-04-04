@@ -1,0 +1,1 @@
+scp -r Server/* MovieMatcher@13.82.49.1:/home/MovieMatcher/stack/apache2/htdocs/MovieMatcherServer
