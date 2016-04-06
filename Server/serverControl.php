@@ -29,7 +29,7 @@ elseif ($expertWeight3>($expertWeight1+$expertWeight2)){
 	$otherResults=$resultE1+"&"+$resultE2;
 }
 else {
-	if (strcmp($resultE1,$resultE2)=0) {
+	if ($resultE1==$resultE2) {
 		$resultWeight=$expertWeight1+$expertWeight2;
 		if ($resultWeight>$expertWeight3) {
 			$decision=$resultE1;
@@ -41,7 +41,7 @@ else {
 }
 		}
 	}
-	elseif (strcmp($resultE1,$resultE3)=0) {
+	elseif ($resultE1==$resultE3) {
 		$resultWeight=$expertWeight1+$expertWeight3;
 		if ($resultWeight>$expertWeight2) {
 			$decision=$resultE1;
@@ -53,7 +53,7 @@ else {
 }
 		}
 	}
-	elseif (strcmp($resultE2,$resultE3)=0) {
+	elseif ($resultE2==$resultE3) {
 		$resultWeight=$expertWeight2+$expertWeight3;
 		if ($resultWeight>$expertWeight1) {
 			$decision=$resultE2;
