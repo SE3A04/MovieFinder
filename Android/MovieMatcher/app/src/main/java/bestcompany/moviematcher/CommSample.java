@@ -53,7 +53,7 @@ public class CommSample extends AppCompatActivity implements AdapterView.OnItemS
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CommSample.this, ResultsActivity.class);
+                Intent intent = new Intent(CommSample.this, SearchActivity.class);
                 startActivity(intent);
             }
         });

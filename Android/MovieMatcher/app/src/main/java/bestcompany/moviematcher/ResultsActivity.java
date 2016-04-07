@@ -10,14 +10,25 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 
+import java.util.ArrayList;
+
 public class ResultsActivity extends AppCompatActivity {
 
     ListView resultList;
+    String name1 = "";
+    String name2 = "";
+    String name3 = "";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
+
+        Intent intent = getIntent();
+        name1 = intent.getStringExtra("Name1");
+        name2 = intent.getStringExtra("Name2");
+        name3 = intent.getStringExtra("Name3");
 
         importcontent();
     }
@@ -26,14 +37,14 @@ public class ResultsActivity extends AppCompatActivity {
     public void importcontent()
     {
         resultList= (ListView) findViewById(R.id.resultList);
-        Button next = (Button) findViewById(R.id.resultNext);
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent x = new Intent(ResultsActivity.this,MapsActivity.class);
-                startActivity(x);
-            }
-        });
+        ArrayList<String> x = new ArrayList<>();
+        x.add(name1);
+        x.add(name2);
+        x.add(name3);
+        ListViewAdapter adapter = new ListViewAdapter(x,this);
+        resultList.setAdapter(adapter);
     }
+
+
 
 }
