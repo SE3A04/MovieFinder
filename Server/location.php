@@ -12,7 +12,7 @@ if ($conn->connect_error) {
     die("");
 }
 
-$sql = "SELECT Location FROM locations WHERE ID=" . $_REQUEST["ID"];
+$sql = "SELECT locations.Location FROM locations,movies WHERE locations.ID=movies.ID AND movies.Name='" . $_REQUEST["Name"] . "'";
 $res = $conn->query($sql);
 
 $prefix = "";
