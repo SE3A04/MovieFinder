@@ -1,5 +1,6 @@
 package bestcompany.moviematcher;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -47,6 +48,16 @@ public class CommSample extends AppCompatActivity implements AdapterView.OnItemS
         dataText = (TextView)findViewById(R.id.dataText);
 
         new ConnectTask().execute();
+
+        Button nextButton = (Button) findViewById(R.id.nextActivityButton);
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CommSample.this, ResultsActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override

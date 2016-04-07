@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple_gradient">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/SearchButton"
+        android:background="@drawable/whiteborder"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Names of cast"
+        android:id="@+id/CastTextView"
+        android:textSize="30sp"
+        android:layout_above="@+id/CastEditText"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:backgroundTint="#ffffff"
+        android:textColorHint="#ffffff"
+        android:id="@+id/CastEditText"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/GenreTextView"
+        android:hint="Enter here..." />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type of genre"
+        android:id="@+id/GenreTextView"
+        android:layout_centerVertical="true"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:layout_below="@+id/GenreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:backgroundTint="#ffffff"
+        android:textColorHint="#ffffff"
+        android:id="@+id/GenreEditText"
+        android:textColor="#ffffff"
+        android:hint="Enter here..." />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quotes from movies"
+        android:layout_marginTop="30dp"
+        android:id="@+id/QuotesTextView"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/GenreEditText"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_below="@+id/QuotesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:backgroundTint="#ffffff"
+        android:id="@+id/QuotesEditText"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:hint="Enter here..." />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MovieMatcher"
+        android:id="@+id/TitleTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the name of the 3 categories to get the best results returned."
+        android:id="@+id/TitleDescription"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/TitleTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="17sp"
+        android:textColor="#cecdcd" />
+
+
+</RelativeLayout>
