@@ -16,9 +16,9 @@ $expertControl1=new expertControl1;
 $expertControl2=new expertControl2;
 $expertControl3=new expertControl3;
 // query experts
-$resultE1 = expertControl1->getResult($queryE1);
-$resultE2 = expertControl2->getResult($queryE2);
-$resultE3 = expertControl3->getResult($queryE3);
+$resultE1 = $expertControl1->getResult($queryE1);
+$resultE2 = $expertControl2->getResult($queryE2);
+$resultE3 = $expertControl3->getResult($queryE3);
 // deicde final result from expert weight and value of the returned query
 if ($expertWeight1>($expertWeight2+$expertWeight3)){
 	$decision=$resultE1;
@@ -42,7 +42,6 @@ else {
 		else {
 			$decision=$resultE3;
 			$otherResults=$resultE1."&".$resultE2;
-}
 		}
 	}
 	elseif ($resultE1==$resultE3) {
@@ -54,7 +53,6 @@ else {
 		else {
 			$decision=$resultE2;
 			$otherResults=$resultE1."&".$resultE3;
-}
 		}
 	}
 	elseif ($resultE2==$resultE3) {
@@ -62,7 +60,6 @@ else {
 		if ($resultWeight>$expertWeight1) {
 			$decision=$resultE2;
 			$otherResults=$resultE1."&".$resultE3;
-}
 		}
 		else {
 			$decision=$resultE1;
@@ -77,12 +74,10 @@ else {
 		elseif ($expertWeight2>$expertWeight1&&$expertWeight3) {
 			$decision=$resultE2;
 			$otherResults=$resultE1."&".$resultE3;
-}
 		}
 		elseif ($expertWeight3>$expertWeight1&&$expertWeight3>$expertWeight2) {
 			$decision=$resultE3;
 			$otherResults=$resultE1."&".$resultE2;
-}
 		}
 	}
 }
