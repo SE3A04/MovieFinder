@@ -97,7 +97,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         protected void onPostExecute(Protocol p) {
             if (p != null) {
                 protocol = p;
-                new GetLocationsTask().execute();
+                new GetLocationsTask().execute(currentMovie);
             } else {
                 // failed to create connection
             }
