@@ -99,7 +99,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter the name of the 3 categories to get the best results returned."
+        android:text="When entering the information, please seperate the names/genres/quotes by a comma."
         android:id="@+id/TitleDescription"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"

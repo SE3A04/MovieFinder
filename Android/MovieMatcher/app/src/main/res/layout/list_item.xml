@@ -5,4 +5,34 @@
     android:layout_height="220dp"
     android:background="@drawable/black_gradient">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other Possibility: "
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Reccomendationtext"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Movie Name"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:id="@+id/MovieText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Click to view shooting locations)"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:id="@+id/LocationText"
+        android:layout_marginBottom="5dp"
+        android:textSize="12sp" />
 </RelativeLayout>
