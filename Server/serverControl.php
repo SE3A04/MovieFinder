@@ -1,8 +1,10 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
 // require expert php files
-require 'expertControl1.php';
-require 'expertControl2.php';
-require 'expertControl3.php';
+require 'ExpertControl1.php';
+require 'ExpertControl2.php';
+require 'ExpertControl3.php';
 // expert decision weight
 $expertWeight1=.7;
 $expertWeight2=.1;
