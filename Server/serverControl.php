@@ -11,6 +11,10 @@ $expertWeight3=.2;
 $queryE1=$_POST['E1'];
 $queryE2=$_POST['E2'];
 $queryE3=$_POST['E3'];
+// instantiate expert classes
+$expertControl1=new expertControl1;
+$expertControl2=new expertControl2;
+$expertControl3=new expertControl3;
 // query experts
 $resultE1 = expertControl1->getResult($queryE1);
 $resultE2 = expertControl2->getResult($queryE2);
