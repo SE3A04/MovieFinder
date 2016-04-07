@@ -13,6 +13,11 @@ $expertWeight3=.2;
 $queryE1=$_POST['E1'];
 $queryE2=$_POST['E2'];
 $queryE3=$_POST['E3'];
+
+//TEST INPUT REMOVE
+//$queryE1=$_REQUEST['E1'];
+//$queryE2=$_REQUEST['E2'];
+//$queryE3=$_REQUEST['E3'];
 // instantiate expert classes
 $expertControl1=new expertControl1;
 $expertControl2=new expertControl2;
@@ -24,62 +29,62 @@ $resultE3 = $expertControl3->getResult($queryE3);
 // deicde final result from expert weight and value of the returned query
 if ($expertWeight1>($expertWeight2+$expertWeight3)){
 	$decision=$resultE1;
-	$otherResults=$resultE2."&".$resultE3;
+	$otherResults=$resultE2."%".$resultE3;
 }
 elseif ($expertWeight2>($expertWeight1+$expertWeight3)){
 	$decision=$resultE2;
-	$otherResults=$resultE1."&".$resultE3;
+	$otherResults=$resultE1."%".$resultE3;
 }
 elseif ($expertWeight3>($expertWeight1+$expertWeight2)){
 	$decision=$resultE3;
-	$otherResults=$resultE1."&".$resultE2;
+	$otherResults=$resultE1."%".$resultE2;
 }
 else {
 	if ($resultE1==$resultE2) {
 		$resultWeight=$expertWeight1+$expertWeight2;
 		if ($resultWeight>$expertWeight3) {
 			$decision=$resultE1;
-			$otherResults=$resultE2."&".$resultE3;
+			$otherResults=$resultE2."%".$resultE3;
 		}
 		else {
 			$decision=$resultE3;
-			$otherResults=$resultE1."&".$resultE2;
+			$otherResults=$resultE1."%".$resultE2;
 		}
 	}
 	elseif ($resultE1==$resultE3) {
 		$resultWeight=$expertWeight1+$expertWeight3;
 		if ($resultWeight>$expertWeight2) {
 			$decision=$resultE1;
-			$otherResults=$resultE2."&".$resultE3;
+			$otherResults=$resultE2."%".$resultE3;
 		}
 		else {
 			$decision=$resultE2;
-			$otherResults=$resultE1."&".$resultE3;
+			$otherResults=$resultE1."%".$resultE3;
 		}
 	}
 	elseif ($resultE2==$resultE3) {
 		$resultWeight=$expertWeight2+$expertWeight3;
 		if ($resultWeight>$expertWeight1) {
 			$decision=$resultE2;
-			$otherResults=$resultE1."&".$resultE3;
+			$otherResults=$resultE1."%".$resultE3;
 		}
 		else {
 			$decision=$resultE1;
-			$otherResults=$resultE2."&".$resultE3;
+			$otherResults=$resultE2."%".$resultE3;
 		}
 	}
 	else {
 		if ($expertWeight1>$expertWeight2&&$expertWeight1>$expertWeight3) {
 			$decision=$resultE1;
-			$otherResults=$resultE2."&".$resultE3;
+			$otherResults=$resultE2."%".$resultE3;
 		}
 		elseif ($expertWeight2>$expertWeight1&&$expertWeight3) {
 			$decision=$resultE2;
-			$otherResults=$resultE1."&".$resultE3;
+			$otherResults=$resultE1."%".$resultE3;
 		}
 		elseif ($expertWeight3>$expertWeight1&&$expertWeight3>$expertWeight2) {
 			$decision=$resultE3;
-			$otherResults=$resultE1."&".$resultE2;
+			$otherResults=$resultE1."%".$resultE2;
 		}
 	}
 }
@@ -87,4 +92,3 @@ else {
 $finalResult = $decision."%".$otherResults;
 echo $finalResult;
 ?>
-
