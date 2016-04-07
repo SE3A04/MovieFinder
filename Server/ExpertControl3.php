@@ -1,6 +1,6 @@
 <?php
 
-	class ExpertControl2 {
+	class ExpertControl3 {
     var $servername ;
     var $username ;
     var $password ;
@@ -23,11 +23,11 @@
 			$keywords = explode(",",$keywordString) ;
 			$sql = bindInValues($keywords) ;
 			$res = ($this->conn)->query($sql) ;
-			if ($row = $res->fetch_row()) {	return $row[0].",".$row[1] ; }
+			if ($row = $res->fetch_row()) {	return $row[0] ; }
 		}
 
 		function bindInValues(array $values) {
-			$sql = sprintf('SELECT DISTINCT m.Movie,m2.cnt FROM expert3 m JOIN(SELECT Movie, COUNT(*) AS cnt FROM expert1 WHERE Name IN (%s)) m2 ON (m2.Movie = m.Movie) ORDER BY m2.cnt DESC LIMIT 1;)',implode(', ', array_fill(0, count($values), '?')));
+			$sql = sprintf('SELECT DISTINCT m.movie_name,(SELECT count(*) as cnt from memorable_quotes m2 WHERE m2.movie_name=m.movie_name AND quotes IN (%s)) as order_col FROM memorable_quotes m ORDER BY order_col DESC LIMIT 1;',implode(', ', array_fill(0, count($values), '?')));
 			$stmt = ($this->conn)->prepare($sql);
 
 			foreach ($values as $value) {
