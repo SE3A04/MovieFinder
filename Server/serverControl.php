@@ -18,26 +18,26 @@ $resultE3 = expertControl3->getResult($queryE3);
 // deicde final result from expert weight and value of the returned query
 if ($expertWeight1>($expertWeight2+$expertWeight3)){
 	$decision=$resultE1;
-	$otherResults=$resultE2+"&"+$resultE3;
+	$otherResults=$resultE2."&".$resultE3;
 }
 elseif ($expertWeight2>($expertWeight1+$expertWeight3)){
 	$decision=$resultE2;
-	$otherResults=$resultE1+"&"+$resultE3;
+	$otherResults=$resultE1."&".$resultE3;
 }
 elseif ($expertWeight3>($expertWeight1+$expertWeight2)){
 	$decision=$resultE3;
-	$otherResults=$resultE1+"&"+$resultE2;
+	$otherResults=$resultE1."&".$resultE2;
 }
 else {
 	if ($resultE1==$resultE2) {
 		$resultWeight=$expertWeight1+$expertWeight2;
 		if ($resultWeight>$expertWeight3) {
 			$decision=$resultE1;
-			$otherResults=$resultE2+"&"+$resultE3;
+			$otherResults=$resultE2."&".$resultE3;
 		}
 		else {
 			$decision=$resultE3;
-			$otherResults=$resultE1+"&"+$resultE2;
+			$otherResults=$resultE1."&".$resultE2;
 }
 		}
 	}
@@ -45,11 +45,11 @@ else {
 		$resultWeight=$expertWeight1+$expertWeight3;
 		if ($resultWeight>$expertWeight2) {
 			$decision=$resultE1;
-			$otherResults=$resultE2+"&"+$resultE3;
+			$otherResults=$resultE2."&".$resultE3;
 		}
 		else {
 			$decision=$resultE2;
-			$otherResults=$resultE1+"&"+$resultE3;
+			$otherResults=$resultE1."&".$resultE3;
 }
 		}
 	}
@@ -57,33 +57,33 @@ else {
 		$resultWeight=$expertWeight2+$expertWeight3;
 		if ($resultWeight>$expertWeight1) {
 			$decision=$resultE2;
-			$otherResults=$resultE1+"&"+$resultE3;
+			$otherResults=$resultE1."&".$resultE3;
 }
 		}
 		else {
 			$decision=$resultE1;
-			$otherResults=$resultE2+"&"+$resultE3;
+			$otherResults=$resultE2."&".$resultE3;
 		}
 	}
 	else {
 		if ($expertWeight1>$expertWeight2&&$expertWeight1>$expertWeight3) {
 			$decision=$resultE1;
-			$otherResults=$resultE2+"&"+$resultE3;
+			$otherResults=$resultE2."&".$resultE3;
 		}
 		elseif ($expertWeight2>$expertWeight1&&$expertWeight3) {
 			$decision=$resultE2;
-			$otherResults=$resultE1+"&"+$resultE3;
+			$otherResults=$resultE1."&".$resultE3;
 }
 		}
 		elseif ($expertWeight3>$expertWeight1&&$expertWeight3>$expertWeight2) {
 			$decision=$resultE3;
-			$otherResults=$resultE1+"&"+$resultE2;
+			$otherResults=$resultE1."&".$resultE2;
 }
 		}
 	}
 }
 // return final result
-$finalResult = $decision+"%"+$otherResults;
+$finalResult = $decision."%".$otherResults;
 echo $finalResult;
 ?>
 
